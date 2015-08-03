@@ -46,8 +46,7 @@ set hidden                "Don't close buffers when changing files
 set wildchar=<Tab>        "Tab expands wildcards
 set fileencoding=utf8     "Unicode man
 set encoding=utf-8
-set backspace=indent,eol,start "Allow backspacing over tabs end of lines and sta
-rt of insert
+set backspace=indent,eol,start "Allow backspacing over tabs end of lines and start of insert
 set wildmode=longest,list "Better tab completion of filenames (like bash)
 set wildmenu              "as above
 "set mouse=a
