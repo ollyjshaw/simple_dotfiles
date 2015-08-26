@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
+Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'gmarik/vundle'
 Bundle 'toyamarinyon/vim-swift'
 Bundle 'Lokaltog/vim-powerline'
