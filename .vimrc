@@ -23,6 +23,8 @@ Bundle 'tpope/vim-markdown'
 Bundle 'timcharper/textile.vim'
 Bundle 'derekwyatt/vim-scala'
 
+let $BASH_ENV = "~/.bash_aliases"
+
 ":source ~/.vim/support_functions.vim
 
 filetype plugin indent on
@@ -37,7 +39,6 @@ set shiftwidth=2          "Autodindent to 2 spaces width
 set scrolloff=10          "Start scrolling when 10 lines close to the bottom
 set ruler                 "Shows current file position
 set statusline=%<%f\ %h%m%y%r%=%-14.(%l,%c%V%)\ %P
-set cursorline            "Highlight current row
 set novisualbell          "Don't shake the screen
 set number                "show line numbers
 set title                 "Change title of window based on file
