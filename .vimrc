@@ -85,6 +85,7 @@ set list lcs=tab:·⁖,trail:¶
 let mapleader = ","
 map <leader>, :CtrlP<CR>
 map <leader>l :NERDTreeToggle<CR>
+:imap jj <Esc>
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.swp,*/tmp/*,*.so,*.zip
 
