@@ -7,7 +7,8 @@ call vundle#rc()
 Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'gmarik/vundle'
 Bundle 'toyamarinyon/vim-swift'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'scrooloose/nerdtree'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'vim-scripts/tlib'
@@ -25,8 +26,6 @@ Bundle 'timcharper/textile.vim'
 Bundle 'derekwyatt/vim-scala'
 
 let $BASH_ENV = "~/.bash_aliases"
-
-":source ~/.vim/support_functions.vim
 
 filetype plugin indent on
 syntax on
@@ -51,7 +50,6 @@ set encoding=utf-8
 set backspace=indent,eol,start "Allow backspacing over tabs end of lines and start of insert
 set wildmode=longest,list "Better tab completion of filenames (like bash)
 set wildmenu              "as above
-"set mouse=a
 set lazyredraw            " no buffer refresh while running macros
 set nofoldenable
 set foldlevelstart=99
@@ -63,6 +61,7 @@ cmap %/ %:p:h/
 set t_Co=256
 set background=dark       "Tell vim I'm using a dark background
 
+let g:airline#extensions#tabline#enabled = 0
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 1
@@ -70,7 +69,7 @@ hi IndentGuidesEven ctermbg=black
 hi IndentGuidesOdd ctermbg=white
 let g:ragtag_global_maps = 1
 hi CursorLine cterm=none ctermbg=235
-hi Search term=reverse ctermfg=88 ctermbg=214
+hi Search term=reverse guibg='Purple' guifg='NONE'
 
 "Custom filetypes
 au BufNewFile,BufRead *.ctp set filetype=html
@@ -91,8 +90,6 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.swp,*/tmp/*,*.so,*.zip
 
 set backupdir=/tmp
 set directory=/tmp
-
-let g:Powerline_symbols = 'fancy'
 
 command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
 function! QuickfixFilenames()
