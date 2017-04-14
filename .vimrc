@@ -60,6 +60,7 @@ cmap %/ %:p:h/
 
 set t_Co=256
 set background=dark       "Tell vim I'm using a dark background
+colorscheme desert
 
 let g:airline#extensions#tabline#enabled = 0
 let g:indent_guides_auto_colors = 0
@@ -69,7 +70,8 @@ hi IndentGuidesEven ctermbg=black
 hi IndentGuidesOdd ctermbg=white
 let g:ragtag_global_maps = 1
 hi CursorLine cterm=none ctermbg=235
-hi Search term=reverse guibg='Purple' guifg='NONE'
+"hi Search term=reverse guibg='Purple' guifg='NONE'
+hi Search term=reverse ctermfg=88 ctermbg=214
 
 "Custom filetypes
 au BufNewFile,BufRead *.ctp set filetype=html
