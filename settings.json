@@ -1,0 +1,9 @@
+{
+    "window.zoomLevel": 1,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 14,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all"
+}
