@@ -4,6 +4,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
+Bundle 'pangloss/vim-javascript'
+Bundle 'w0rp/ale'
 Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'gmarik/vundle'
 Bundle 'toyamarinyon/vim-swift'
@@ -17,7 +19,6 @@ Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
@@ -89,10 +90,15 @@ map <leader>, :CtrlP<CR>
 map <leader>l :NERDTreeToggle<CR>
 :imap jj <Esc>
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.swp,*/tmp/*,*.so,*.zip
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.swp,*/tmp/*,*.so,*.zip,*.class
 
 set backupdir=/tmp
 set directory=/tmp
+
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+      \  'javascript': ['eslint'],
+      \}
 
 command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
 function! QuickfixFilenames()
