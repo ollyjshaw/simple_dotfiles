@@ -1,9 +1,88 @@
 {
-    "window.zoomLevel": 1,
-    "editor.fontSize": 16,
+    "window.zoomLevel": 0,
+    "editor.fontSize": 14,
     "terminal.integrated.fontSize": 14,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
-    "editor.tabSize": 2,
-    "editor.renderWhitespace": "all"
+    "editor.tabSize": 4,
+    "editor.renderWhitespace": "all",
+    "cSpell.userWords": [
+        "Cloudwatch",
+        "Kubernetes",
+        "Linting",
+        "Nginx",
+        "Olly",
+        "Repo",
+        "admin",
+        "enablement",
+        "grafana",
+        "gridsmartercities",
+        "movie",
+        "onboarding",
+        "personas",
+        "repos",
+        "serverless",
+        "setup",
+        "templated"
+    ],
+    "extensions.ignoreRecommendations": false,
+    "explorer.confirmDragAndDrop": false,
+    "cSpell.language": "en-GB",
+    // "python.linting.flake8Enabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+],
+"ruby.codeCompletion": "rcodetools",
+"ruby.format": "rubocop",
+"ruby.intellisense": "rubyLocate",
+"cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pub",
+    "python",
+    "restructuredtext",
+    "ruby",
+    "rust",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yml"
+],
+"editor.renderControlCharacters": false,
+"ruby.lint": {
+    "rubocop": true
+},
+"editor.wordWrap": "on",
+"vim.insertModeKeyBindings": [
+    {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+    }
+],
+"vim.disableExtension": false,
+"workbench.iconTheme": "vscode-icons"
+
+//"python.pythonPath": "python",
+// "ruby.lint": {
+//     "rubocop": {
+//         "path": "/Users/olivershaw/.rbenv/shims/rubocop"
+//     }
+// },
+// "ruby.lint": rub
 }
