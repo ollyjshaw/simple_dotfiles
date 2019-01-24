@@ -6,3 +6,5 @@
 	email = ollyjshaw@gmail.com
 [push]
 	default = simple
+[pull]
+	rebase = true
