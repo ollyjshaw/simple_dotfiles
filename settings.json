@@ -1,9 +1,9 @@
 {
     "window.zoomLevel": 0,
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "terminal.integrated.fontSize": 14,
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 500,
+    "files.autoSaveDelay": 100,
     "editor.tabSize": 4,
     "editor.renderWhitespace": "all",
     "cSpell.userWords": [
@@ -12,29 +12,46 @@
         "Linting",
         "Nginx",
         "Olly",
+        "Refactor",
         "Repo",
         "admin",
+        "asdict",
+        "clienteling",
+        "cloudsql",
+        "color",
+        "dacite",
+        "dateutil",
+        "electricals",
         "enablement",
+        "fastify",
+        "foobar",
+        "gcloud",
+        "googleapiclient",
         "grafana",
         "gridsmartercities",
+        "jsonify",
+        "kube",
+        "kustomize",
+        "linted",
+        "math",
+        "microservices",
+        "mins",
         "movie",
+        "objs",
         "onboarding",
         "personas",
+        "pytest",
         "repos",
         "serverless",
         "setup",
-        "templated"
+        "strptime",
+        "templated",
+        "templating",
+        "upsert",
+        "upserted"
     ],
-    "extensions.ignoreRecommendations": false,
     "explorer.confirmDragAndDrop": false,
     "cSpell.language": "en-GB",
-    // "python.linting.flake8Enabled": true,
-    "python.linting.pylintArgs": [
-        "--load-plugins=pylint_django"
-],
-"ruby.codeCompletion": "rcodetools",
-"ruby.format": "rubocop",
-"ruby.intellisense": "rubyLocate",
 "cSpell.enabledLanguageIds": [
     "asciidoc",
     "c",
@@ -64,10 +81,6 @@
     "typescriptreact",
     "yml"
 ],
-"editor.renderControlCharacters": false,
-"ruby.lint": {
-    "rubocop": true
-},
 "editor.wordWrap": "on",
 "vim.insertModeKeyBindings": [
     {
@@ -76,13 +89,34 @@
     }
 ],
 "vim.disableExtension": false,
-"workbench.iconTheme": "vscode-icons"
-
-//"python.pythonPath": "python",
-// "ruby.lint": {
-//     "rubocop": {
-//         "path": "/Users/olivershaw/.rbenv/shims/rubocop"
-//     }
-// },
-// "ruby.lint": rub
+"python.testing.pytestEnabled": true,
+"python.linting.flake8Enabled": true,
+"python.linting.pylintEnabled": false,
+"python.linting.enabled": true,
+"vs-kubernetes": {
+    "vs-kubernetes.minikube-path": "/Users/olivershaw/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vs-kubernetes.helm-path": "/Users/olivershaw/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.draft-path": "/Users/olivershaw/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+},
+"files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+},
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"git.autofetch": true,
+"workbench.editor.enablePreview": false,
+"workbench.colorTheme": "Gruvbox Light (Medium)",
+"python.jediEnabled": false,
+"editor.autoClosingBrackets": "beforeWhitespace",
+"editor.autoClosingQuotes": "beforeWhitespace",
+"gitlab.instanceUrl": "https://jl.githost.io",
+"gitlab.showIssueLinkOnStatusBar": false,
+"gitlab.showPipelineUpdateNotifications": true,
+"editor.autoIndent": false,
+"python.sortImports.args": [
+    "-sl"
+],
 }
